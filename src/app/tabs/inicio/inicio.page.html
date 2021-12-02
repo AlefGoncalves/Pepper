@@ -1,0 +1,57 @@
+<ion-content>
+	<div class="conteudo">
+	<div class="search">
+	  <ion-toolbar color="Tint">
+		<ion-searchbar placeholder="pesquisar" color="#363435"></ion-searchbar>
+		  <!--
+		<ion-segment mode="md"  [(ngModel)]="segment" (ionChange)="segmentChanged($event)"> 
+		-->
+		<ion-segment scrollable (ionChange)="segmentChanged($event)" value="0">
+		<ion-segment-button value="0" style=" min-height:30px;">
+	  <ion-label>
+	  Hambúrguers
+		  </ion-label>
+		</ion-segment-button>
+	<ion-segment-button value="1" >
+		  <ion-label>
+			Acompanhamentos
+		  </ion-label>
+		</ion-segment-button>
+		<ion-segment-button value="2" >
+		  <ion-label>
+			combos
+		  </ion-label>
+		</ion-segment-button>
+		<ion-segment-button value="3" >
+		  <ion-label>
+			todos
+		  </ion-label>
+		</ion-segment-button>
+		     
+	</ion-segment>
+	  </ion-toolbar>
+	</div>
+	<div class="search">
+	<ion-card *ngFor="let p of produtos" class="card">
+	  <ion-card-header>
+		<b><ion-card-title>{{p.nome}}</ion-card-title></b>
+	  </ion-card-header>
+	  <ion-card-content>
+		<ion-grid>
+		  <ion-row>
+			<ion-col>
+			  <ion-avatar>
+				<ion-img [src]="p.url"></ion-img>
+			  </ion-avatar>
+			</ion-col>
+			<ion-col size="7">
+			  <p>{{p.descricao}}</p>
+			  <h2><ion-label class="preco">R$ {{p.preco.toFixed(2)}}</ion-label></h2>
+			</ion-col>
+		  </ion-row>
+		</ion-grid>
+	  </ion-card-content>
+	</ion-card>
+	</div>
+	</div>
+  </ion-content>

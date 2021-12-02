@@ -1,0 +1,28 @@
+.conteudo {
+  background-color: #363435;
+  color: #F6F2F1;
+  padding-bottom: 16px;
+}
+.preco{
+  text-align: left;
+  font-weight: bold;
+  color: #fdb302;
+}
+ion-searchbar {
+  color: #4F4F4F;
+}
+
+ion-card-header {
+  background-color: #fdb302; 
+}
+
+.card{
+  padding-bottom: 0px;
+  text-align: left;
+}
+
+.segbtn{
+  --ion-tab-bar-background: #363435;
+  --ion-tab-bar-color: #f6f2f1;
+  --ion-tab-bar-color-selected: #fdb302;
+}
