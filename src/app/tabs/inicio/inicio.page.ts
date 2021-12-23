@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { NavController } from '@ionic/angular';
+import { Produtos, ProdutosService } from 'src/app/service/produtos.service';
+
 
 @Component({
   selector: 'app-inicio',
@@ -6,55 +10,34 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./inicio.page.scss'],
 })
 export class InicioPage implements OnInit {
+ 
+  produtos: Produtos[];  
 
-  produtos = [
-    {
-      nome: '4x Cheddar',
-      descricao: '+ 2 refri lata 269 ml',
-      url: 'assets/hamburguer/4xcheddar.jpg',
-      preco: 48.89
-    },
-    {
-      nome: '4x Chicken',
-      descricao:'+2 batatas +refri 1,5L',
-      url: 'assets/hamburguer/4xchicken.jpg',
-      preco: 58.99
-    },
-    {
-      nome: '4x Double Cheddar',
-      descricao: '+ 2 refri lata 269 ml',
-      url: 'assets/hamburguer/4xdoublecheddar.jpg',
-      preco: 56.00
-    },
-    {
-      nome: '5 Big (Combo 1)',
-      descricao: '+ 1 refri 1,5L',
-      url: 'assets/hamburguer/5big.jpg',
-      preco: 62.99
-    },
-    {
-      nome: '5 Big (Combo 2)',
-      descricao: '+3 batatas + 1 refri 1,5L',
-      url: 'assets/hamburguer/5bigc2.jpg',
-      preco: 75.99
-    },
-    {
-      nome: 'Guaraná',
-      descricao: '1 Litro',      
-      url: 'assets/hamburguer/guarana15l.jpg',
-      preco: 9.00
-    },
-    {
-      nome: 'Água',
-      descricao: '500 ml',      
-      url: 'assets/hamburguer/agua500ml.jpg',
-      preco: 9.00
-    },    
-  ];
+  constructor(public nav: NavController, private service: ProdutosService, private route: Router) { }
 
-  constructor() { }
 
   ngOnInit() {
+    try {
+      this.service.read().subscribe(prod => {
+        this.produtos = prod;
+      })
+    }catch{
+
+    }
+  }
+  doRefresh(event) {  
+
+    setTimeout(() => {
+      this.ngOnInit()
+      event.target.complete();      
+    }, 1000);
+    
+  }
+
+
+  exibirDetalhes(id: String){
+    this.route.navigate(['produto', id]);    
+    this.route.dispose
   }
 
 }

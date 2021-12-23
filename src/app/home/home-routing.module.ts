@@ -7,28 +7,28 @@ const routes: Routes = [
   {
     path: '',
     component: HomePage,
-    children:[
+    children: [
       {
         path: 'carrinho',
-        loadChildren: () => import('../tabs/carrinho/carrinho.module').then( m => m.CarrinhoPageModule)
+        loadChildren: () => import('../tabs/carrinho/carrinho.module').then(m => m.CarrinhoPageModule)
       },
       {
         path: 'pedidos',
-        loadChildren: () => import('../tabs/pedidos/pedidos.module').then( m => m.PedidosPageModule)
+        loadChildren: () => import('../tabs/pedidos/pedidos.module').then(m => m.PedidosPageModule)
       },
       {
         path: 'perfil',
-        loadChildren: () => import('../tabs/perfil/perfil.module').then( m => m.PerfilPageModule)
+        loadChildren: () => import('../tabs/perfil/perfil.module').then(m => m.PerfilPageModule)
       },
-	  {
-		path: 'inicio',
-		loadChildren: () => import('../tabs/inicio/inicio.module').then( m => m.InicioPageModule)
-	  },
-	  {
-		path: '',
-		redirectTo: 'inicio',
-		pathMatch: 'full'
-	  }
+      {
+        path: 'inicio',
+        loadChildren: () => import('../tabs/inicio/inicio.module').then(m => m.InicioPageModule)
+      },
+      {
+        path: '',
+        redirectTo: 'inicio',
+        pathMatch: 'full'
+      }
     ]
   }
 ];
@@ -37,4 +37,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class HomePageRoutingModule {}
+export class HomePageRoutingModule { }

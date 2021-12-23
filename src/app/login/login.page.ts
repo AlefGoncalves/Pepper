@@ -16,12 +16,15 @@ export class LoginPage implements OnInit {
   constructor(public nav: NavController, public toastController: ToastController, private route: Router) { }
 
   ngOnInit() {
+    this.email = ''
+    this.senha = ''
   }
 
   login(){
 
     if(this.email === 'adm' && this.senha === '123'){
       this.route.navigateByUrl('home');
+      this.route.dispose
       this.presentToast('bem vindo!', 'success', 700);
     }else if(Boolean(this.email) === false|| Boolean(this.senha) === false){
       this.presentToast('Um ou mais campos vazios! Preencha corretamente', 'danger', 2000);
@@ -33,14 +36,14 @@ export class LoginPage implements OnInit {
 
   cadastrar(){
     this.route.navigateByUrl('cadastro');
-    this.presentToast('Cadastre seus dados', 'success', 2000);
+    this.presentToast('Cadastre seus dados', 'success', 1300);    
   }
 
   async presentToast(texto: string, cor: string, duration: number) {
     const toast = await this.toastController.create({
       message: texto,
       color: cor,
-      duration: 2000
+      duration: duration
     });
     toast.present();
   }

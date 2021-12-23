@@ -1,0 +1,172 @@
+{
+  "produtos": [
+    {
+      "id": "1",
+      "nome": "4x Cheddar",
+      "descricao": "+ 2 refri lata 269 ml",
+      "urlImg": "assets/hamburguer/4xcheddar.jpg",
+      "preco": 48.89
+    },
+    {
+      "id": "2",
+      "nome": "4x Chicken",
+      "descricao": "+2 batatas +refri 1,5L",
+      "urlImg": "assets/hamburguer/4xchicken.jpg",
+      "preco": 58.99
+    },
+    {
+      "id": "3",
+      "nome": "4x Double Cheddar",
+      "descricao": "+ 2 refri lata 269 ml",
+      "urlImg": "assets/hamburguer/4xdoublecheddar.jpg",
+      "preco": 56
+    },
+    {
+      "id": "4",
+      "nome": "5 Big (Combo 1)",
+      "descricao": "+ 1 refri 1,5L",
+      "urlImg": "assets/hamburguer/5big.jpg",
+      "preco": 62.99
+    },
+    {
+      "id": "5",
+      "nome": "5 Big (Combo 2)",
+      "descricao": "+3 batatas + 1 refri 1,5L",
+      "urlImg": "assets/hamburguer/5bigc2.jpg",
+      "preco": 75.99
+    },
+    {
+      "id": "6",
+      "nome": "Guaraná",
+      "descricao": "1 Litro",
+      "urlImg": "assets/hamburguer/guarana15l.jpg",
+      "preco": 9
+    },
+    {
+      "id": "7",
+      "nome": "Água",
+      "descricao": "500 ml",
+      "urlImg": "assets/hamburguer/agua500ml.jpg",
+      "preco": 9
+    }
+  ],
+  "pedidos": [
+    {
+      "qtde": "1",
+      "valorTotal": "9.00",
+      "status": false,
+      "produtos": {
+        "id": "7",
+        "nome": "Água",
+        "descricao": "500 ml",
+        "urlImg": "assets/hamburguer/agua500ml.jpg",
+        "preco": 9
+      },
+      "id": 1
+    },
+    {
+      "qtde": "2",
+      "valorTotal": "125.98",
+      "status": false,
+      "produtos": {
+        "id": "4",
+        "nome": "5 Big (Combo 1)",
+        "descricao": "+ 1 refri 1,5L",
+        "urlImg": "assets/hamburguer/5big.jpg",
+        "preco": 62.99
+      },
+      "id": 2
+    },
+    {
+      "qtde": "1",
+      "valorTotal": "9.00",
+      "status": false,
+      "produtos": {
+        "id": "6",
+        "nome": "Guaraná",
+        "descricao": "1 Litro",
+        "urlImg": "assets/hamburguer/guarana15l.jpg",
+        "preco": 9
+      },
+      "id": 3
+    },
+    {
+      "qtde": "2",
+      "valorTotal": "18.00",
+      "status": false,
+      "produtos": {
+        "id": "7",
+        "nome": "Água",
+        "descricao": "500 ml",
+        "urlImg": "assets/hamburguer/agua500ml.jpg",
+        "preco": 9
+      },
+      "id": 4
+    },
+    {
+      "qtde": "5",
+      "valorTotal": "280.00",
+      "status": false,
+      "produtos": {
+        "id": "3",
+        "nome": "4x Double Cheddar",
+        "descricao": "+ 2 refri lata 269 ml",
+        "urlImg": "assets/hamburguer/4xdoublecheddar.jpg",
+        "preco": 56
+      },
+      "id": 5
+    },
+    {
+      "qtde": "1",
+      "valorTotal": "62.99",
+      "status": false,
+      "produtos": {
+        "id": "4",
+        "nome": "5 Big (Combo 1)",
+        "descricao": "+ 1 refri 1,5L",
+        "urlImg": "assets/hamburguer/5big.jpg",
+        "preco": 62.99
+      },
+      "id": 6
+    },
+    {
+      "qtde": "2",
+      "valorTotal": "18.00",
+      "status": false,
+      "produtos": {
+        "id": "6",
+        "nome": "Guaraná",
+        "descricao": "1 Litro",
+        "urlImg": "assets/hamburguer/guarana15l.jpg",
+        "preco": 9
+      },
+      "id": 7
+    },
+    {
+      "qtde": "8",
+      "valorTotal": "72.00",
+      "status": false,
+      "produtos": {
+        "id": "6",
+        "nome": "Guaraná",
+        "descricao": "1 Litro",
+        "urlImg": "assets/hamburguer/guarana15l.jpg",
+        "preco": 9
+      },
+      "id": 8
+    },
+    {
+      "qtde": "4",
+      "valorTotal": "303.96",
+      "status": false,
+      "produtos": {
+        "id": "5",
+        "nome": "5 Big (Combo 2)",
+        "descricao": "+3 batatas + 1 refri 1,5L",
+        "urlImg": "assets/hamburguer/5bigc2.jpg",
+        "preco": 75.99
+      },
+      "id": 9
+    }
+  ]
+}
