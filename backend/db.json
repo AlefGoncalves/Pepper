@@ -5,49 +5,56 @@
       "nome": "4x Cheddar",
       "descricao": "+ 2 refri lata 269 ml",
       "urlImg": "assets/hamburguer/4xcheddar.jpg",
-      "preco": 48.89
+      "preco": 48.89,
+      "categoria": "hamburguer"
     },
     {
       "id": "2",
       "nome": "4x Chicken",
       "descricao": "+2 batatas +refri 1,5L",
       "urlImg": "assets/hamburguer/4xchicken.jpg",
-      "preco": 58.99
+      "preco": 58.99,
+      "categoria": "hamburguer"
     },
     {
       "id": "3",
       "nome": "4x Double Cheddar",
       "descricao": "+ 2 refri lata 269 ml",
       "urlImg": "assets/hamburguer/4xdoublecheddar.jpg",
-      "preco": 56
+      "preco": 56,
+      "categoria": "hamburguer"
     },
     {
       "id": "4",
       "nome": "5 Big (Combo 1)",
       "descricao": "+ 1 refri 1,5L",
       "urlImg": "assets/hamburguer/5big.jpg",
-      "preco": 62.99
+      "preco": 62.99,
+      "categoria": "hamburguer"
     },
     {
       "id": "5",
       "nome": "5 Big (Combo 2)",
       "descricao": "+3 batatas + 1 refri 1,5L",
       "urlImg": "assets/hamburguer/5bigc2.jpg",
-      "preco": 75.99
+      "preco": 75.99,
+      "categoria": "hamburguer"
     },
     {
       "id": "6",
       "nome": "Guaraná",
       "descricao": "1 Litro",
       "urlImg": "assets/hamburguer/guarana15l.jpg",
-      "preco": 9
+      "preco": 9,
+      "categoria": "acompanhamento"
     },
     {
       "id": "7",
       "nome": "Água",
       "descricao": "500 ml",
       "urlImg": "assets/hamburguer/agua500ml.jpg",
-      "preco": 9
+      "preco": 9,
+      "categoria": "acompanhamento"
     }
   ],
   "pedidos": [
@@ -60,7 +67,8 @@
         "nome": "Água",
         "descricao": "500 ml",
         "urlImg": "assets/hamburguer/agua500ml.jpg",
-        "preco": 9
+        "preco": 9,
+        "categoria": "acompanhamento"
       },
       "id": 1
     },
@@ -73,7 +81,8 @@
         "nome": "5 Big (Combo 1)",
         "descricao": "+ 1 refri 1,5L",
         "urlImg": "assets/hamburguer/5big.jpg",
-        "preco": 62.99
+        "preco": 62.99,
+        "categoria": "hamburguer"
       },
       "id": 2
     },
@@ -86,7 +95,8 @@
         "nome": "Guaraná",
         "descricao": "1 Litro",
         "urlImg": "assets/hamburguer/guarana15l.jpg",
-        "preco": 9
+        "preco": 9,
+        "categoria": "hamburguer"
       },
       "id": 3
     },
@@ -99,7 +109,8 @@
         "nome": "Água",
         "descricao": "500 ml",
         "urlImg": "assets/hamburguer/agua500ml.jpg",
-        "preco": 9
+        "preco": 9,
+        "categoria": "hamburguer"
       },
       "id": 4
     },
@@ -112,7 +123,8 @@
         "nome": "4x Double Cheddar",
         "descricao": "+ 2 refri lata 269 ml",
         "urlImg": "assets/hamburguer/4xdoublecheddar.jpg",
-        "preco": 56
+        "preco": 56,
+        "categoria": "hamburguer"
       },
       "id": 5
     },
@@ -125,7 +137,8 @@
         "nome": "5 Big (Combo 1)",
         "descricao": "+ 1 refri 1,5L",
         "urlImg": "assets/hamburguer/5big.jpg",
-        "preco": 62.99
+        "preco": 62.99,
+        "categoria": "hamburguer"
       },
       "id": 6
     },
@@ -138,7 +151,8 @@
         "nome": "Guaraná",
         "descricao": "1 Litro",
         "urlImg": "assets/hamburguer/guarana15l.jpg",
-        "preco": 9
+        "preco": 9,
+        "categoria": "acompanhamento"
       },
       "id": 7
     },
@@ -151,7 +165,8 @@
         "nome": "Guaraná",
         "descricao": "1 Litro",
         "urlImg": "assets/hamburguer/guarana15l.jpg",
-        "preco": 9
+        "preco": 9,
+        "categoria": "acompanhamento"
       },
       "id": 8
     },
@@ -164,7 +179,8 @@
         "nome": "5 Big (Combo 2)",
         "descricao": "+3 batatas + 1 refri 1,5L",
         "urlImg": "assets/hamburguer/5bigc2.jpg",
-        "preco": 75.99
+        "preco": 75.99,
+        "categoria": "acompanhamento"
       },
       "id": 9
     }

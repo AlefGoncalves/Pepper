@@ -27,16 +27,14 @@
         R$ {{preco}} X {{qtd}} = R$ {{valorTotal}}
       </ion-label>
     </ion-item>
-    <ion-item>
-     
-        <ion-button size="medium" (click)="subtrai()">
-          <ion-icon name="remove-outline"></ion-icon>
-        </ion-button>
+    <ion-item>     
+        <button (click)="subtrai()" class="btn_menos">
+          -
+        </button>
          {{qtd}} 
-        <ion-button size="medium" (click)="adiciona()">
-          <ion-icon name="add-outline"></ion-icon>
-        </ion-button>
-   
+        <button (click)="adiciona()" class="btn_mais">
+          +
+        </button>   
     </ion-item>
   </ion-list>
 </ion-content>

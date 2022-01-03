@@ -9,6 +9,7 @@ export class Produtos{
   public urlImg: string;
   public descricao: string;
   public descricaoBreve: string;
+  public categoria: string;
 }
 
 @Injectable({

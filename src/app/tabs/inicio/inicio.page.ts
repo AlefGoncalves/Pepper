@@ -11,7 +11,10 @@ import { Produtos, ProdutosService } from 'src/app/service/produtos.service';
 })
 export class InicioPage implements OnInit {
  
-  produtos: Produtos[];  
+  produtos: Produtos[]; 
+  //procura: string; 
+  private selectTab: string = '0';
+  produtosFiltrado: Produtos[];
 
   constructor(public nav: NavController, private service: ProdutosService, private route: Router) { }
 
@@ -32,6 +35,11 @@ export class InicioPage implements OnInit {
       event.target.complete();      
     }, 1000);
     
+  }
+
+  segmentChanged(event: any){
+    this.selectTab = event.target.value;
+    console.log(this.produtos)
   }
 
 
