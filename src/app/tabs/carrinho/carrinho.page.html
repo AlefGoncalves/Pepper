@@ -1,4 +1,4 @@
-<ion-content>		
+<ion-content>
 	<ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
 		<ion-refresher-content>
 
@@ -43,12 +43,12 @@
 							<ion-label class="preco">R$ {{p.valorTotal}}</ion-label>
 						</ion-label>
 
-						<ion-button size="small" (click)="adiciona(i)">
-							<ion-icon name="add-outline"></ion-icon>
+						<ion-button fill="clear" size="small" (click)="adiciona(i)" class="btnAdiciona">
+						 +
 						</ion-button>
 						{{p.qtde}}
-						<ion-button size="small" (click)="subtrai(i)">
-							<ion-icon name="remove-outline"></ion-icon>
+						<ion-button fill="clear" size="small" (click)="subtrai(i)" class="btnSubtrai">
+							-
 						</ion-button>
 
 

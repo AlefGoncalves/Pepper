@@ -2,7 +2,7 @@
 	<ion-searchbar placeholder="pesquisar" showCancelButton="focus" animated color="#363435"></ion-searchbar>
 	<!--
 	<ion-searchbar placeholder="pesquisar" [(ngModel)]="procura" showCancelButton="focus" animated color="#363435"></ion-searchbar>
-	  <ion-segment mode="md"  [(ngModel)]="segment" (ionChange)="segmentChanged($event)"> 
+	  <ion-segment mode="md"  [(ngModel)]="segment" (ionChange)="segmentChanged($event)">
 	  -->
 	<ion-segment value="0" scrollable (ionChange)="segmentChanged($event)">
 		<ion-segment-button value="0" style=" min-height:30px;">
@@ -36,9 +36,9 @@
 	</ion-refresher>
 	<!--<ion-card *ngFor="let p of produtos | filter : procura" class="card" (click)="exibirDetalhes(p.id)" > -->
 
-	<div *ngIf="selectTab == '0'">
+	<div *ngIf="selectTab === '0'">
 		<div *ngFor="let p of produtos">
-			<ion-card *ngIf="p.categoria == 'hamburguer'" class="card" (click)="exibirDetalhes(p.id)">
+			<ion-card *ngIf="p.categoria === 'hamburguer'" class="card" (click)="exibirDetalhes(p.id)">
 				<ion-card-header>
 					<b>
 						<ion-card-title class="nomeProduto">{{p.nome}}</ion-card-title>
@@ -60,9 +60,9 @@
 			</ion-card>
 		</div>
 	</div>
-	<div *ngIf="selectTab == '1'">
+	<div *ngIf="selectTab === '1'">
 		<div *ngFor="let p of produtos">
-			<ion-card *ngIf="p.categoria == 'acompanhamento'" class="card" (click)="exibirDetalhes(p.id)">
+			<ion-card *ngIf="p.categoria === 'acompanhamento'" class="card" (click)="exibirDetalhes(p.id)">
 				<ion-card-header>
 					<b>
 						<ion-card-title class="nomeProduto">{{p.nome}}</ion-card-title>
@@ -84,9 +84,9 @@
 			</ion-card>
 		</div>
 	</div>
-	<div *ngIf="selectTab == '2'">
+	<div *ngIf="selectTab === '2'">
 		<div *ngFor="let p of produtos">
-			<ion-card *ngIf="p.categoria == 'hamburguer'" class="card" (click)="exibirDetalhes(p.id)">
+			<ion-card *ngIf="p.categoria === 'hamburguer'" class="card" (click)="exibirDetalhes(p.id)">
 				<ion-card-header>
 					<b>
 						<ion-card-title class="nomeProduto">{{p.nome}}</ion-card-title>
@@ -109,7 +109,7 @@
 		</div>
 	</div>
 
-	<div *ngIf="selectTab == '3'">
+	<div *ngIf="selectTab === '3'">
 		<div *ngFor="let p of produtos">
 			<ion-card class="card" (click)="exibirDetalhes(p.id)">
 				<ion-card-header>

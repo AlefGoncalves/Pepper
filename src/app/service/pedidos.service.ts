@@ -4,7 +4,7 @@ import { Observable } from 'rxjs';
 import { Produtos } from './produtos.service';
 
 export class Pedidos{
-  public id?: string;  
+  public id?: string;
   public qtde: string;
   public status: boolean;
   public valorTotal: string;
@@ -18,7 +18,7 @@ export class PedidosService {
 
 
     //https://ivrum-api-json.herokuapp.com/produtos
-    private url = 'http://localhost:3001/pedidos';
+    private url = 'https://ivrum-api-json.herokuapp.com/pedidos';
 
   constructor(private http: HttpClient) { }
 

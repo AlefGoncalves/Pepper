@@ -11,9 +11,9 @@ import { Produtos, ProdutosService } from 'src/app/service/produtos.service';
 })
 export class ProdutoPage implements OnInit {
 
-  qtde = 0;
+  qtde = 1;
   id: string;
-  produto: Produtos; 
+  produto: Produtos;
   pedido: Pedidos;
   nome: string;
   descricao: string;
@@ -38,14 +38,17 @@ export class ProdutoPage implements OnInit {
         this.nome = this.produto.nome
         this.descricao = this.produto.descricao
         this.preco = this.produto.preco
-        this.url = this.produto.urlImg          
+        this.url = this.produto.urlImg
+
+        this.total = (Number.parseFloat(this.preco))
+        this.strTotal = this.total.toFixed(2)
 
         console.log(prod)
       })
     } catch (e) {
       console.log(e)
     }
-    this.strTotal = "0.00"
+
   }
 
   voltarInicio() {
@@ -57,7 +60,7 @@ export class ProdutoPage implements OnInit {
     this.qtde++
     this.total = Number.parseFloat(this.preco) * this.qtde
     this.strTotal = this.total.toFixed(2)
-      
+
   }
   subtrai() {
     if (this.qtde > 0) {
@@ -67,12 +70,12 @@ export class ProdutoPage implements OnInit {
     }
   }
 
-  addCarrinho(){     
+  addCarrinho(){
 
     this.pedido = new Pedidos
 
-    console.log("ID do produto: " + this.id)   
-    this.pedido.qtde = this.qtde.toString() 
+    console.log("ID do produto: " + this.id)
+    this.pedido.qtde = this.qtde.toString()
     this.pedido.valorTotal = this.strTotal
     this.pedido.status = false
 
@@ -85,26 +88,26 @@ export class ProdutoPage implements OnInit {
   }
 
   addCarrinhoPedido(){
-    this.pedido = new Pedidos      
-   
-    this.pedido.qtde = this.qtde.toString() 
+    this.pedido = new Pedidos
+
+    this.pedido.qtde = this.qtde.toString()
     this.pedido.valorTotal = this.strTotal
     this.pedido.status = false
-    
+
     this.pedido.produtos = this.produto
-    
+
 
 
     this.pedidosService.create(this.pedido).subscribe(pedido => {
       console.log(pedido)
     })
-    
+
     this.route.navigateByUrl('home')
-    this.route.dispose  
+    this.route.dispose
 
     this.presentToast('Produto adicionado ao carrinho com sucesso', 'success', 1300);
   }
-  
+
   async presentToast(texto: string, cor: string, duration: number) {
     const toast = await this.toastController.create({
       message: texto,

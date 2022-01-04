@@ -1,5 +1,5 @@
 .conteudo {
-    
+
     background-color: #363435;
     color: #F6F2F1;
     padding-bottom: 16px;
@@ -14,7 +14,7 @@ ion-content{
     width: 20%;
     --content-align: center;
     padding-left: 5%;
-    
+
 }
 .btnAdd{
     --width: 40%;
@@ -27,7 +27,7 @@ ion-label.sc-ion-label-md-h.sc-ion-label-md-s.md.hydrated{
 ion-label.sc-ion-label-ios-h.sc-ion-label-ios-s.ios.hydrated {
     vertical-align: -webkit-baseline-middle;
 }
- 
+
 .footer{
     background-color: #363435;
     color: #F6F2F1;
@@ -35,5 +35,15 @@ ion-label.sc-ion-label-ios-h.sc-ion-label-ios-s.ios.hydrated {
 }
 ion-img{
     --width: 100%;
-    
+
 }
+
+.descricaoProduto{
+  color: #F6F2F1;
+}
+
+.preco{
+  color: #fdb302;
+}
+
+

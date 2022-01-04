@@ -10,10 +10,10 @@ import { Produtos, ProdutosService } from 'src/app/service/produtos.service';
   styleUrls: ['./inicio.page.scss'],
 })
 export class InicioPage implements OnInit {
- 
-  produtos: Produtos[]; 
-  //procura: string; 
-  private selectTab: string = '0';
+
+  produtos: Produtos[];
+  //procura: string;
+  public selectTab: string = '0';
   produtosFiltrado: Produtos[];
 
   constructor(public nav: NavController, private service: ProdutosService, private route: Router) { }
@@ -28,13 +28,13 @@ export class InicioPage implements OnInit {
 
     }
   }
-  doRefresh(event) {  
+  doRefresh(event) {
 
     setTimeout(() => {
       this.ngOnInit()
-      event.target.complete();      
+      event.target.complete();
     }, 1000);
-    
+
   }
 
   segmentChanged(event: any){
@@ -44,7 +44,7 @@ export class InicioPage implements OnInit {
 
 
   exibirDetalhes(id: String){
-    this.route.navigate(['produto', id]);    
+    this.route.navigate(['produto', id]);
     this.route.dispose
   }
 

@@ -17,7 +17,7 @@ export class Produtos{
 })
 export class ProdutosService {
 
-  private url = 'http://localhost:3001/produtos';
+  private url = 'https://ivrum-api-json.herokuapp.com/produtos';
 
   constructor(private http: HttpClient) { }
 
