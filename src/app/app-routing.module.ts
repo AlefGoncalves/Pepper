@@ -70,6 +70,10 @@ const routes: Routes = [
   {
     path: 'detalhesCarrinho/:id',
     loadChildren: () => import('./detalhes/carrinho/carrinho.module').then( m => m.CarrinhoPageModule)
+  },
+  {
+    path: 'info_pessoal',
+    loadChildren: () => import('./perfil-pages/meus-dados/pessoal/pessoal.module').then(m => m.PessoalPageModule)
   }
 
 

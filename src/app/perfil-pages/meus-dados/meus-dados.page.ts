@@ -13,6 +13,9 @@ export class MeusDadosPage implements OnInit {
   voltar(){
     this.nav.navigateForward('home');
   }
+  abrirInfoPessoal(){
+    this.nav.navigateForward('info_pessoal');
+  }
   
   ngOnInit() {
   }
