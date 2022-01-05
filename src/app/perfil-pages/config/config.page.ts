@@ -14,6 +14,13 @@ export class ConfigPage implements OnInit {
     this.nav.navigateForward('home');
   }
   
+  abrirSobre(){
+    this.nav.navigateForward('config_sobre');
+  }
+  abrirNotifica(){
+    this.nav.navigateForward('config_notifica');
+  }
+  
   ngOnInit() {
   }
 

@@ -3,8 +3,16 @@
   --ion-text-color: #f6f2f1;
 }
 
-ion-button{
+.btn{
   --ion-background-color: #fdb302;
+  color: #363435;
+  font-weight: bold;
+  padding: 2px;
+}
+
+
+ion-button{
+  background-color: #fdb302;
   border-color: #fdb302;
   color: #363435;
 }

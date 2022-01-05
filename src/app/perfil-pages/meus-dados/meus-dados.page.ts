@@ -16,6 +16,12 @@ export class MeusDadosPage implements OnInit {
   abrirInfoPessoal(){
     this.nav.navigateForward('info_pessoal');
   }
+  abrirContato(){
+    this.nav.navigateForward('info_contato');
+  }
+  abrirCredenciais(){
+    this.nav.navigateForward('info_credenciais');
+  }
   
   ngOnInit() {
   }

@@ -39,7 +39,6 @@ export class InicioPage implements OnInit {
 
   segmentChanged(event: any){
     this.selectTab = event.target.value;
-    console.log(this.produtos)
   }
 
 

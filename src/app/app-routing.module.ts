@@ -74,6 +74,39 @@ const routes: Routes = [
   {
     path: 'info_pessoal',
     loadChildren: () => import('./perfil-pages/meus-dados/pessoal/pessoal.module').then(m => m.PessoalPageModule)
+  },
+  {
+    path: 'info_contato',
+    loadChildren: () => import('./perfil-pages/meus-dados/contato/contato.module').then(m => m.ContatoPageModule)
+  },
+  {
+    path: 'info_credenciais',
+    loadChildren: () => import('./perfil-pages/meus-dados/credenciais/credenciais.module').then(m => m.CredenciaisPageModule)
+  },
+  {
+    path: 'config_sobre',
+    loadChildren: () => import('./perfil-pages/config/sobre/sobre.module').then(m => m.SobrePageModule)
+  },
+  {
+    path: 'config_notifica',
+    loadChildren: () => import('./perfil-pages/config/config-notifi/config-notifi.module').then(m => m.ConfigNotifiPageModule)
+  }
+  ,
+  {
+    path: 'termos',
+    loadChildren: () => import('./perfil-pages/config/sobre/termos/termos.module').then(m => m.TermosPageModule)
+  },
+  {
+    path: 'politica',
+    loadChildren: () => import('./perfil-pages/config/sobre/politica/politica.module').then( m => m.PoliticaPageModule)
+  },
+  {
+    path: 'dispositivos',
+    loadChildren: () => import('./perfil-pages/seguranca/dispositivos/dispositivos.module').then( m => m.DispositivosPageModule)
+  },
+  {
+    path: 'senha',
+    loadChildren: () => import('./perfil-pages/seguranca/senha-add/senha-add.module').then( m => m.SenhaAddPageModule)
   }
 
 

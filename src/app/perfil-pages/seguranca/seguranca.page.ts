@@ -13,6 +13,13 @@ export class SegurancaPage implements OnInit {
   voltar(){
     this.nav.navigateForward('home');
   }
+  abrirDispositivos(){
+    this.nav.navigateForward('dispositivos')
+  }
+  
+  abrirSenhaAdd(){
+    this.nav.navigateForward('senha')
+  }
   
   ngOnInit() {
   }
